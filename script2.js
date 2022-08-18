@@ -1,4 +1,3 @@
-// This needs to be changed to my API request
 d3.json("https://min-api.cryptocompare.com/data/histoday?fsym=ETH&tsym=USD&limit=2&aggregate=3&e=CCCAGG", function(error, d) {
 
 	var data = d.Data;
