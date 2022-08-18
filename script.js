@@ -25,7 +25,7 @@ var yAxis = d3.svg.axis()
   .scale(y)
   .orient("left");
 
-d3.json("https://api.myjson.com/bins/4sw50", function(error, data) {
+d3.json("https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=:CMA&apikey=J49FNH99XFWEPAC2", function(error, data) {
   x.domain(data.map(function(d) {
     return d.receive_date
   }));
