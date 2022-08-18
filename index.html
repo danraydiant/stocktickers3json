@@ -9,9 +9,9 @@
         <h2>D3 Graphic: Stock Market Chart Project</h2>
         <p>Data imported from this Open Source REST API: <a href="https://www.alphavantage.co/documentation/">Alpha Advantage API</a></p>
         <br>
-        <script>
 		<script src="https://d3js.org/d3.v4.min.js"></script>
 		<svg width="960" height="500"></svg>
+	  <script>
 		d3.json("https://min-api.cryptocompare.com/data/histoday?fsym=ETH&tsym=USD&limit=2&aggregate=3&e=CCCAGG", function(error, d) {
 
 	var data = d.Data;
