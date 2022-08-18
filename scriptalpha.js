@@ -1,10 +1,10 @@
 <script>
 		d3.json("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey=demo", function(error, d) {
 
-	var data = d.Time Series (Daily);
-  data.forEach(function(d){ d.Time Series (Daily) = new Date(d.Time Series (Daily) * 1000) });
+	var Time Series (Daily) = d.Time Series (Daily);
+  Time Series (Daily).forEach(function(d){ d.Time Series (Daily) = new Date(d.Time Series (Daily) * 1000) });
   
-  //console.log(data);
+  //console.log(Time Series (Daily));
   if (error) throw error;
 
   var svg = d3.select("svg"),
