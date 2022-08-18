@@ -1,5 +1,5 @@
 <script>
-		d3.json("https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=IBM&apikey=demo", function(error, d) {
+		d3.json("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey=demo", function(error, d) {
 
 	var data = d.Time Series (Daily);
   data.forEach(function(d){ d.Time Series (Daily) = new Date(d.Time Series (Daily) * 1000) });
