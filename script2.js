@@ -53,3 +53,5 @@ d3.json("https://min-api.cryptocompare.com/data/histoday?fsym=ETH&tsym=USD&limit
       .attr("stroke-width", 1.5)
       .attr("d", line);
 });
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<svg width="960" height="500"></svg>
