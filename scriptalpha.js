@@ -1,8 +1,8 @@
 <script>
 		d3.json("https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=IBM&apikey=demo", function(error, d) {
 
-	var data = d.Data;
-  data.forEach(function(d){ d.time = new Date(d.time * 1000) });
+	var data = d.Time Series (Daily);
+  data.forEach(function(d){ d.Time Series (Daily) = new Date(d.Time Series (Daily) * 1000) });
   
   //console.log(data);
   if (error) throw error;
@@ -22,11 +22,11 @@
       .rangeRound([height, 0]);
 
   var line = d3.line()
-      .x(function(d) { return x(d.time); })
-      .y(function(d) { return y(d.close); });
+      .x(function(d) { return x(d.Time Series (Daily); })
+      .y(function(d) { return y(d.4. close); });
       
-  x.domain(d3.extent(data, function(d) { return d.time; }));
-  y.domain(d3.extent(data, function(d) { return d.close; }));
+  x.domain(d3.extent(data, function(d) { return d.Time Series (Daily); }));
+  y.domain(d3.extent(data, function(d) { return d.4. close; }));
 
   g.append("g")
       .attr("transform", "translate(0," + height + ")")
